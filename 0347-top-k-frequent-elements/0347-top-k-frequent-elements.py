@@ -1,10 +1,14 @@
+import heapq
 class Solution:
-    def topKFrequent(self, nums: List[int], k: int) -> List[int]:
-        occ = {}
-        for el in nums:
+    def topKFrequent(self, nums, k):
+        out = {}
+        for num in nums:
             try:
-                occ[el] += 1
+                out[num]+=1
             except:
-                occ[el] = 1
-        sort = sorted(occ.items(), key=lambda x: x[1], reverse= True)
-        return [sort[i][0] for i in range(k)]
+                out[num]= 1
+        pq = []
+        for el in out:
+            heapq.heappush(pq,(out[el],el))
+            if len(pq)>k: heappop(pq)
+        return [i[1] for i in pq]
