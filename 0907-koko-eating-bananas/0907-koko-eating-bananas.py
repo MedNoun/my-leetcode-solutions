@@ -10,10 +10,7 @@ class Solution:
             return t
         start = ceil(sum(piles)/h)
         finish = max(piles)
-        results = []
-        i = 0
-        while finish!=start and i<1000:
-            i+=1
+        while finish!=start:
             k = (finish - start)//2 + start
             t = neededTime(k)
             if t>h:
