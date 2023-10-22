@@ -7,7 +7,6 @@ class Solution:
                 t += ceil(p/k)
                 if t>h:
                     return t
-            print("needed time for {} is {}".format(k,t))
             return t
         start = ceil(sum(piles)/h)
         finish = max(piles)
