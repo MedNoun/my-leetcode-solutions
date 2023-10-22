@@ -8,7 +8,7 @@ class Solution:
                 if t>h:
                     return t
             return t
-        start = 1
+        start = ceil(sum(piles)/h)
         finish = max(piles)
         results = []
         i = 0
