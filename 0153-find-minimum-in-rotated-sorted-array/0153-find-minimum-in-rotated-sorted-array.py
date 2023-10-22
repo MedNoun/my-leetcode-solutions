@@ -3,9 +3,7 @@ class Solution:
         first = 1
         last = len(nums)
         result = nums[0]
-        i = 0
-        while first <= last and i<1000:
-            i+=1
+        while first <= last:
             k = (last - first)//2 + first
             candidate = nums[-k]
             if candidate < result:
