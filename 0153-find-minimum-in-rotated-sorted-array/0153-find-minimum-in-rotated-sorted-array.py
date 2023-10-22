@@ -8,7 +8,6 @@ class Solution:
             i+=1
             k = (last - first)//2 + first
             candidate = nums[-k]
-            print(first, last, k, candidate)
             if candidate < result:
                 first = k+1
                 result = candidate
