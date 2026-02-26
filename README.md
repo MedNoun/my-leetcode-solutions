@@ -6,6 +6,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Hash Table
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/MedNoun/my-leetcode-solutions/tree/master/0001-two-sum) |
 | [0242-valid-anagram](https://github.com/MedNoun/my-leetcode-solutions/tree/master/0242-valid-anagram) |
 ## String
 |  |
@@ -15,4 +16,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0242-valid-anagram](https://github.com/MedNoun/my-leetcode-solutions/tree/master/0242-valid-anagram) |
+## Array
+|  |
+| ------- |
+| [0001-two-sum](https://github.com/MedNoun/my-leetcode-solutions/tree/master/0001-two-sum) |
 <!---LeetCode Topics End-->
