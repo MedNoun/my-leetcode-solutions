@@ -1,14 +1,14 @@
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        sorted_array = sorted(enumerate(nums),key=lambda x:x[1])
-        i = 0
-        j = len(sorted_array) - 1
-        while(True):
-            somme = sorted_array[i][1] + sorted_array[j][1]
-            if somme == target:
-                return [sorted_array[i][0], sorted_array[j][0]]
-            if somme > target:
-                j = j-1
-            else:
-                i = i+1
-       
+        dic_nums = [{"i" : k, "v" : nums[k]} for k in range(len(nums))]
+        nums = sorted(dic_nums, key=lambda x : x.get("v"))
+        i , j = 0 , len(nums) - 1
+        while i<j:
+            s = nums[i]["v"] + nums[j]["v"]
+            if s == target:
+                return [nums[i]["i"],nums[j]["i"]]
+            if s < target:
+                i+=1
+            if s > target:
+                j-=1
+        return []
