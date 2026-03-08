@@ -48,4 +48,9 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0020-valid-parentheses](https://github.com/MedNoun/my-leetcode-solutions/tree/master/0020-valid-parentheses) |
+| [0155-min-stack](https://github.com/MedNoun/my-leetcode-solutions/tree/master/0155-min-stack) |
+## Design
+|  |
+| ------- |
+| [0155-min-stack](https://github.com/MedNoun/my-leetcode-solutions/tree/master/0155-min-stack) |
 <!---LeetCode Topics End-->
